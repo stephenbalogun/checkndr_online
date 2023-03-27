@@ -2,7 +2,7 @@
 opts_one <- function() {
   c(
     "Client state", "Client LGA", "Sex", "Age", "Visit date", "Screening result", "Confirmatory test",
-    "Tie breaker", "Testing point"
+    "Tie breaker", "HTS result interpretation", "Testing point"
   )
 }
 

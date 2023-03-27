@@ -9,8 +9,10 @@ valid_cases <- function(df) {
       sex %in% c("Male", "Female", "M", "F", "male", "female", "m", "f"),
       age >= 15,
       !is.na(visit_date),
-      hts_result %in% c("R", "Pos"),
+      hts_screening_result %in% c("R", "Pos"),
       hts_confirmatory_result %in% c("R", "Pos") | hts_tie_breaker_result %in% c("R", "Pos"),
+      hts_result %in% c("Pos", "POS", "pos") & hts_confirmatory_result %in% c("R", "Pos") |
+        hts_result %in% c("Pos", "POS", "pos") & !hts_confirmatory_result %in% c("R", "Pos") & hts_tie_breaker_result %in% c("R", "Pos"),
       !is.na(opt_out),
       !is.na(testing_point),
       recency_test_name %in% c("Asante", "AS"),

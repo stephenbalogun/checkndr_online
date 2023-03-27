@@ -5,9 +5,9 @@ account: 4gates
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 8677516
-bundleId: 7010156
+bundleId: 7015920
 url: https://4gates.shinyapps.io/checkndr/
-when: 1679850327.71764
-lastSyncTime: 1679850327.71765
+when: 1679960640.8249
+lastSyncTime: 1679960640.82492
 asMultiple: FALSE
 asStatic: FALSE
